@@ -7,8 +7,8 @@
 
 # 프로젝트 개요
 
-- **목표:** {{PROJECT_GOAL}}
-- **핵심 스택:** {{TECH_STACK}}
+- **목표:** Spring Boot 3.5.12와 PostgreSQL 15.8 기반 사전 과제 대비용 서비스 설계/구현 연습
+- **핵심 스택:** Spring Boot 3.5.12, PostgreSQL 15.8
 
 # 문서 체인 & 작업 절차
 
@@ -23,7 +23,7 @@
   5) 구현 완료 후 `code -> spec -> requirement -> design` 역정합화로 문서/코드를 최종 일치시킨다.
 - Implementation Gate: PLAN/TODO가 최신 Requirement/Spec 버전을 참조하지 않으면 구현 금지
 - "go" 규칙: `docs/todo/vX.Y.md` 순서 준수. 🔄가 있으면 그 작업, 없으면 첫 ⚪ 작업, ⛔는 건너뜀
-- PLAN 절차: `docs/plan/_TEMPLATE.md` + 영역별 `backend/AGENTS.md` 또는 `frontend/AGENTS.md` 지침을 백엔드는 `docs/plan/backend/<feature>_plan.md`, 프론트엔드는 `docs/plan/frontend/<feature>_plan.md` 작성 -> 한국어 요약 -> 승인 후 TDD/구현
+- PLAN 절차: `docs/plan/backend/backend_template.md` 또는 `docs/plan/frontend/frontend_template.md` + 영역별 `backend/AGENTS.md` 또는 `frontend/AGENTS.md` 지침을 기준으로 백엔드는 `docs/plan/backend/<feature>_plan.md`, 프론트엔드는 `docs/plan/frontend/<feature>_plan.md` 작성 -> 한국어 요약 -> 승인 후 TDD/구현
 - 개발 종료 역정합화: 기능 개발이 끝나면 `code -> spec -> requirement -> design` 역순으로 재검증/통합하여 문서-코드 불일치를 해소한 뒤 종료한다.
 
 # 기록 규칙

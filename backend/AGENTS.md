@@ -8,12 +8,12 @@
 
 ## 2. 현재 백엔드 기준
 
-- 런타임: [Java 버전]
-- 프레임워크: [Spring Boot 버전]
-- 빌드: [Gradle 버전]
-- DB: [DB 버전]
-- 테스트 DB: [테스트 DB 버전]
-- 테스트 프레임워크: [테스트 프레임워크 버전]
+- 런타임: Java LTS (프로젝트 초기화 시 build 파일 기준으로 최종 확정)
+- 프레임워크: Spring Boot 3.5.12
+- 빌드: Gradle Wrapper 기반 (프로젝트 초기화 시 버전 확정)
+- DB: PostgreSQL 15.8
+- 테스트 DB: H2 우선, PostgreSQL 차이 검증이 필요하면 Testcontainers 또는 별도 PostgreSQL 검증 추가
+- 테스트 프레임워크: JUnit 5 + Mockito + Spring Test
 - 기본 검증 명령: `.gradlew test`
 
 ## 3. 패키지/구조 규칙
